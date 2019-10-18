@@ -4,15 +4,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   By using these method below: 
   
   ### Code Example
-  componentDidMount(){
-    this.setState({loading: true})
-    fetch('https://hplussport.com/api/products/order/price/sort/asc/qty/1')
-        .then(data => data.json())
-        .then(data => this.setState({data, loading: false}))
+  componentDidMount () {
+     this.setState({loading: true})
+     fetch('https://hplussport.com/api/products/order/price/sort/asc/qty/1')
+         .then ( data => data.json ())
+         .then( data  => this.setState({data, loading: false}))
   }
   componentDidUpdate(){
     console.log("the component just updated")
   }
+  ### Check API by copy the link and paste in the browser then you can edit the qty(Quantity) to show the product on the screen
+  
+  ### The button will change when Click 
   
 ## Available Scripts
 
