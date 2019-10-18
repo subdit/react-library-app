@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+# The Library-react-app
+  Will show you how to use Rest API to generate/fetch the product for the library product of the week.
+  By using these method below: 
+  
+  ### Code Example
+  componentDidMount(){
+    this.setState({loading: true})
+    fetch('https://hplussport.com/api/products/order/price/sort/asc/qty/1')
+        .then(data => data.json())
+        .then(data => this.setState({data, loading: false}))
+  }
+  componentDidUpdate(){
+    console.log("the component just updated")
+  }
+  
 ## Available Scripts
 
 In the project directory, you can run:
